@@ -33,6 +33,10 @@ const App = () => {
                         <Route path="/en" element={<Main language="EN" />} />
 
                         {/* Policy routes */}
+                        <Route
+                            path="/ethereum-gas-tracker/privacy"
+                            element={<Policy title="ethereum" />}
+                        />
                         {Object.entries(policyRoutes).map(([key, path]) => (
                             <Route
                                 key={path}

@@ -39,8 +39,8 @@ export const Policy = ({ title }) => {
         
         <div dangerouslySetInnerHTML={{ __html: policy.content }} />
         
-        <div style={{ marginTop: '2rem', paddingTop: '2rem', borderTop: '1px solid var(--color-primary-variant)' }}>
-          <p><strong>Last Updated:</strong> November 8, 2025</p>
+        <div className="policy-footer">
+          <p><strong>Last Updated:</strong> {policy.lastUpdated || 'November 8, 2025'}</p>
           <p>If you have any questions about this Privacy Policy, please contact us.</p>
         </div>
       </div>
